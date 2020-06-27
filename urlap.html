@@ -72,6 +72,10 @@
           <label for="comment">Megjegyzés: *</label>
           <textarea name="address" id="address" rows="5"></textarea>
         </div>
+        <div>
+          <label for="">Mennyiség: *</label>
+          <input class="form-control" name="amount-input" type="number">
+        </div>
       </fieldset>
       <fieldset>
         <legend>Termék adatai</legend>
@@ -108,6 +112,8 @@
             <option value="100">Szósz 2</option>
           </select>
         </div>
+        <button onclick="calcAmount()" type="button" class="btn btn-primary">Megrendelés</button>
+
       </fieldset>
 
 
@@ -116,7 +122,6 @@
   </div>
   <fieldset>
     <legend>Gombok</legend>
-    <button type="button" class="btn btn-primary">Primary</button>
     <button type="button" class="btn btn-secondary">Secondary</button>
     <button type="button" class="btn btn-success">Success</button>
     <button type="button" class="btn btn-danger">Danger</button>
@@ -127,6 +132,9 @@
 
     <button type="button" class="btn btn-link">Link</button>
   </fieldset>
+
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>
